@@ -39,9 +39,7 @@ namespace MovieList.Controllers
             if (!string.IsNullOrEmpty(searchString))
             {
                 movies = movies.Where(m => m.Title.Contains(searchString));
-                Console.WriteLine(searchString);
-                Console.WriteLine(movies);
-
+                
             }
 
             if (!string.IsNullOrEmpty(movieGenre))
